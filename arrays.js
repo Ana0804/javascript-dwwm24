@@ -23,9 +23,6 @@ var paragraphe3 = document.createElement("p");
 paragraphe3.innerHTML = "<strong> Le premier animal que j'ai vu était un: </strong>" + animal[0];
 divAnimal.appendChild(paragraphe3);
 
-document.getElementById("demo").innerHTML = Boolean(10 > 9);
-
-
 
 class Chien {
     constructor(race) {
