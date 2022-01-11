@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html lang="FR">
+        <head>
+            <meta charset="uft-8">
+            <title>A table!</title>
+            <link rel="stylesheet" href="a-table.css">
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body{
+                    height: 100vh;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    background: whitesmoke;
+                }
+
+            </style>
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="cookies.html">Cookie</a></li>
+                        <li><a href="salade.html">Salade</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <canvas width="600" height="600" style="background-color: whitesmoke;"></canvas>
+                <script>
+                    const canvas = document.querySelector('canvas');
+                    const ctx = canvas.getContext('2d');
+                    ctx.beginPath();
+                    ctx.lineWidth=3;
+                    ctx.arc(300, 300, 290, 0, 1 * Math.PI);
+                    ctx.fillStyle = "#D0FFF9";
+                    ctx.stroke();
+                    ctx.fill();
+                    
+                    var fermeture = document.querySelector('canvas');
+                    ctx.lineTo(592, 300);
+                    ctx.stroke(); 
+                    
+                    var salade = document.querySelector('canvas');
+                    ctx.beginPath();
+                    ctx.arc(300, 310, 270, 0, 1 * Math.PI);
+                    ctx.fillStyle = "#72B310";
+                    ctx.stroke();
+                    ctx.fill();
+
+                    function tomate(x,y){
+                        ctx.fillStyle = "#CB0524";
+                        ctx.beginPath();
+                        ctx.arc(x, y, 12, 0 ,2 * Math.PI);
+                        ctx.stroke();
+                        ctx.fill();
+                    };
+                    tomate(120, 350);
+                    tomate(180, 460);
+                    tomate(240, 420);
+                    tomate(370, 530);
+                    tomate(510, 400);
+                    tomate(420, 470);
+                    tomate(310, 490);
+                    tomate(350, 360);
+                    tomate(450, 315);
+                    tomate(260, 345);
+
+                    function oignon(a,b){
+                        ctx.fillStyle = "#F8E89D"
+                        ctx.beginPath();
+                        ctx.arc(a , b, 10, 0, )
+                    }
+
+
+
+
+
+
+                    var reflet1 = document.querySelector('canvas');
+                    ctx.beginPath();
+                    ctx.moveTo(400,470);
+                    ctx.lineTo(250,325);
+                    ctx.strokeStyle = "#C8DBE2";
+                    ctx.lineWidth = 10;
+                    ctx.stroke();
+
+                    var reflet2 = document.querySelector('canvas');
+                    ctx.beginPath();
+                    ctx.moveTo(290,340);
+                    ctx.lineTo(380,425);
+                    ctx.strokeStyle = "#C8DBE2";
+                    ctx.lineWidth = 5;
+                    ctx.stroke();
+
+
+                   
+
+
+
+
+
+
+                
+                    
+                    </script>
