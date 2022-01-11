@@ -1,0 +1,63 @@
+#bloc-page
+{
+    width: 1200px;
+    margin: auto;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-title{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul{
+    display:table;
+    list-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+nav li{
+    display: table-cell;
+    padding: 10px 30px 10px 30px;
+}
+
+nav li a{
+    display: block;
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 50px 0 30px;
+}
+
+nav li a:hover{
+    color: red;
+}
+
+.current-page{
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+}
